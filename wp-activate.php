@@ -25,7 +25,6 @@ $activate_cookie       = 'wp-activate-' . COOKIEHASH;
 
 $key    = '';
 $result = null;
-$new_key = "asdfd";
 
 if ( isset( $_GET['key'] ) && isset( $_POST['key'] ) && $_GET['key'] !== $_POST['key'] ) {
 	wp_die( __( 'A key value mismatch has been detected. Please follow the link provided in your activation email.' ), __( 'An error occurred during the activation' ), 400 );
